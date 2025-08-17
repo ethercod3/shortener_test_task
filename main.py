@@ -1,10 +1,9 @@
 from fastapi import FastAPI, Depends, HTTPException, Request, status
 from fastapi.responses import RedirectResponse
 from sqlalchemy.orm import Session
-from database import Base, engine, get_db
-import models, schemas, crud
-from utils import validate_url
-import uvicorn
+from app.database import Base, engine, get_db
+import app.schemas as schemas, app.crud as crud
+from app.utils import validate_url
 
 app = FastAPI(title="URL Shortener", version="1.0.0")
 
