@@ -1,7 +1,7 @@
 # Запуск проекта
 
 ```bash
-docker-comse up
+docker-compose up
 ```
 
 # Документация
