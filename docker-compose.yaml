@@ -2,5 +2,7 @@ services:
   web:
     build: .
     image: url-shortener:latest
+    volumes:
+      - ./data:/data    
     ports:
       - "8000:8000"
